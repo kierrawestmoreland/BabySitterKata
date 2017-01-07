@@ -8,7 +8,7 @@ public class NightlyRate {
 	private int startTimeLimit = 17; //military time
 	private int endTimeLimit = 28; //military time of 12a + each hour after up to 4am
 	private int startTime = 18;
-	private int endTime = 25;
+	private int endTime = 20;
 	
 	
 	public int getStartTimeLimit() {
@@ -33,6 +33,10 @@ public class NightlyRate {
 	}
 
 	public int getHoursWorked() {
+		return endTime - startTime;
+	}
+
+	public int getBabySitterMoney() {
 		return 0;
 	}
 
