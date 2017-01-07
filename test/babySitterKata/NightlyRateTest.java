@@ -15,4 +15,11 @@ public class NightlyRateTest {
 		assertEquals(17, startTimeLimit);
 	}
 	
+	@Test 
+	public void getBabySitterEndTimeLimit(){
+		NightlyRate underTest = new NightlyRate();
+		int endTimeLimit = underTest.getEndTimeLimit();
+		assertEquals(28, endTimeLimit);
+	}
+	
 }
