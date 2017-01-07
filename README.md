@@ -22,8 +22,8 @@ I want to calculate my nightly charge
 *First*, I figured I would need a main class to run the application (Main) & a class to figure out the rate (NightlyRate).
 
 *Second*, I created variables within the NightlyRate class:
- * Start time & End Time
- * Start time limit & End time limit
+ * startTime & endTime
+ * startTimeLimit & endTimeLimit
  * Payrate for hourly charges of $12, $8, & $16
  
 *Next*, I write my first simple test (getBabySitterStartTime)
