@@ -11,8 +11,8 @@ public class NightlyRateTest {
 	@Test
 	public void getBabySitterStartTimeLimit(){
 		NightlyRate underTest = new NightlyRate();
-		int startTime = underTest.getStartTimeLimit();
-		assertEquals(17, startTime);
+		int startTimeLimit = underTest.getStartTimeLimit();
+		assertEquals(17, startTimeLimit);
 	}
 	
 }
