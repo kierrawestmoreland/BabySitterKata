@@ -26,5 +26,12 @@ public class NightlyRateTest {
 		int startTime = underTest.getStartTime();
 		assertTrue(startTime > 16 && startTime < 29);
 	}
+	
+	@Test 
+	public void babySitterEndTimeBetween17And28(){
+		NightlyRate underTest = new NightlyRate();
+		int endTime = underTest.getEndTime();
+		assertTrue(endTime > 16 && endTime < 29);
+	}
 }
 	

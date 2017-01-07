@@ -7,7 +7,7 @@ public class NightlyRate {
 	private int rateMidnightToEnd;
 	private int startTimeLimit = 17; //military time
 	private int endTimeLimit = 28; //military time of 12a + each hour after up to 4am
-	private int startTime;
+	private int startTime = 18;
 	private int endTime;
 	
 	
@@ -20,9 +20,16 @@ public class NightlyRate {
 	}
 
 	public int getStartTime() {
+		return startTime;
+	}
+
+	public int getEndTime() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+	
+	
 	
 
 	
