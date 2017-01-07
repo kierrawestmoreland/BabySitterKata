@@ -9,7 +9,7 @@ import babySitterKata.NightlyRate;
 public class NightlyRateTest {
 	
 	@Test
-	public void getBabySitterStartTime(){
+	public void getBabySitterStartTimeLimit(){
 		NightlyRate underTest = new NightlyRate();
 		int startTime = underTest.getStartTimeLimit();
 		assertEquals(17, startTime);
