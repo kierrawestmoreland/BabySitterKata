@@ -34,3 +34,8 @@ BabySitter Time Conversion:
 I thought that hard coding the original times into military time would be the easiest thing to do (for hours between 5p & 12a).
 For the hours after 12a, I am going to add each hour to 24 until we arrive at 4am which would equal 28 (12am = 24 + 4am = 28).
 I think this would serve as an easy conversion to accomplish the goal of the code.
+
+I know I need to check whether or not the babysitter is working within the right hours. 
+I also know that I need to calculate each group of hours in each range separately. 
+I'm going to start doing that with if statements, but I would like to try this kata again using for loops to increase the number of the hours in each range. 
+I'm trying to stick to simple first (if statements) to prevent myself from overthinking. 
