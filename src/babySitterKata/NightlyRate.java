@@ -29,7 +29,10 @@ public class NightlyRate {
 	}
 
 	public int get8DollarRate() {
-		// TODO Auto-generated method stub
+		return rateStartLimitToBedtime;
+	}
+
+	public int getHoursWorked() {
 		return 0;
 	}
 

@@ -37,10 +37,17 @@ public class NightlyRateTest {
 	@Test
 	public void babySitterGetsPaid8DollarsForFirstRate(){
 		NightlyRate underTest = new NightlyRate();
-		int firstRateHours = 3;
+		int firstRateHours = 1;
 		int rateStartLimitToBedTime = underTest.get8DollarRate();
-		assertEquals(8, rateStartLimitToBedTime * firstRateHours);
-		
+		assertEquals(12, rateStartLimitToBedTime * firstRateHours);
+	}
+	
+	@Test 
+	public void babySitterGetsPaid12DollarsForMultipleHours(){
+		NightlyRate underTest = new NightlyRate();
+		int hoursWorked = underTest.getHoursWorked();
+		int firstPayRate = underTest.get8DollarRate();
+		assertEquals(24, hoursWorked * firstPayRate);
 	}
 }
 	
