@@ -15,10 +15,8 @@ public class NightlyRate {
 		return startTimeLimit;
 	}
 
-
 	public int getEndTimeLimit() {
-		// TODO Auto-generated method stub
-		return 0;
+		return endTimeLimit;
 	}
 	
 
