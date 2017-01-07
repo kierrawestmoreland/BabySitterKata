@@ -1,10 +1,8 @@
 package babySitterKata;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
-
-import babySitterKata.NightlyRate;
 
 public class NightlyRateTest {
 	
@@ -22,4 +20,11 @@ public class NightlyRateTest {
 		assertEquals(28, endTimeLimit);
 	}
 	
+	@Test 
+	public void babySitterStartTimeBewteen17And28(){
+		NightlyRate underTest = new NightlyRate();
+		int startTime = underTest.getStartTime();
+		assertTrue(startTime > 16 && startTime < 29);
+	}
 }
+	
