@@ -1,59 +1,52 @@
 package babySitterKata;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class NightlyRateTest {
+	NightlyRate underTest;	
+	
+	@Before 
+	public void runBeforeEachTest(){
+		underTest = new NightlyRate();
+	}
 	
 	@Test
 	public void getBabySitterStartTimeLimit(){
-		NightlyRate underTest = new NightlyRate();
-		int startTimeLimit = underTest.getStartTimeLimit();
-		assertEquals(17, startTimeLimit);
+		assertEquals(17, underTest.getStartTimeLimit());
 	}
 	
 	@Test 
 	public void getBabySitterEndTimeLimit(){
-		NightlyRate underTest = new NightlyRate();
-		int endTimeLimit = underTest.getEndTimeLimit();
-		assertEquals(28, endTimeLimit);
+		assertEquals(28, underTest.getEndTimeLimit());
 	}
 	
 	@Test 
 	public void babySitterStartTimeBewteen17And28(){
-		NightlyRate underTest = new NightlyRate();
-		int startTime = underTest.getStartTime();
-		assertTrue(startTime > 16 && startTime < 29);
+		assertTrue(underTest.getStartTime() > 16 && underTest.getStartTime() < 29);
 	}
 	
 	@Test 
 	public void babySitterEndTimeBetween17And28(){
-		NightlyRate underTest = new NightlyRate();
-		int endTime = underTest.getEndTime();
-		assertTrue(endTime > 16 && endTime < 29);
+		assertTrue(underTest.getEndTime() > 16 && underTest.getEndTime() < 29);
 	}
 	
 	@Test
 	public void babySitterGetsPaid8DollarsForFirstRate(){
-		NightlyRate underTest = new NightlyRate();
-		int firstRateHours = 1;
-		int rateStartLimitToBedTime = underTest.get8DollarRate();
-		assertEquals(12, rateStartLimitToBedTime * firstRateHours);
+		assertEquals(12, underTest.get8DollarRate() * 1);
 	}
 
 	@Test 
 	public void babySitterHoursWorked(){
-		NightlyRate underTest = new NightlyRate();
-		int hoursWorked = underTest.getBabySitterHours();
-		assertEquals(9, hoursWorked);
+		assertEquals(9, underTest.getBabySitterHours());
 	}
 	
 	@Test
 	public void babySitterTotalPayForHoursWorked(){
-		NightlyRate underTest = new NightlyRate();
-		int totalPay = underTest.getBabySitterTotalPay();
-		assertEquals(104, totalPay);
+		assertEquals(104, underTest.getBabySitterTotalPay());
 	}
 		
 }
