@@ -38,6 +38,18 @@ public class NightlyRate {
 		int rate16Hours = 0;
 		int rate8Hours = 0;
 
+		for (int i = getStartTime(); i < getEndTime(); i++) {
+
+			if (i < bedTime) {
+				rate12Hours++;
+			}
+
+			else if (i < midNight) {
+				rate8Hours++;
+			} else {
+				rate16Hours++;
+			}
+		}
 		return rate12Hours + rate8Hours + rate16Hours;
 	}
 
