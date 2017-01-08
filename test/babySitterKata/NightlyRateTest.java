@@ -48,6 +48,13 @@ public class NightlyRateTest {
 		int hoursWorked = underTest.getBabySitterHours();
 		assertEquals(9, hoursWorked);
 	}
+	
+	@Test
+	public void babySitterTotalPayForHoursWorked(){
+		NightlyRate underTest = new NightlyRate();
+		int totalPay = underTest.getBabySitterTotalPay();
+		assertEquals(104, totalPay);
+	}
 		
 }
 	

@@ -3,8 +3,8 @@ package babySitterKata;
 public class NightlyRate {
 
 	private int rateStartLimitToBedtime = 12;
-	private int rateBedtimeToMidnight;
-	private int rateMidnightToEndLimit;
+	private int rateBedtimeToMidnight = 8;
+	private int rateMidnightToEndLimit = 16;
 	private int startTimeLimit = 17; // military time
 	private int bedTime = 20; // 8pm
 	private int midNight = 24;
@@ -51,6 +51,10 @@ public class NightlyRate {
 			}
 		}
 		return rate12Hours + rate8Hours + rate16Hours;
+	}
+
+	public int getBabySitterTotalPay() {
+		return 0;
 	}
 
 }
