@@ -1,16 +1,18 @@
 package babySitterKata;
 
 public class NightlyRate {
-	
+
 	private int rateStartLimitToBedtime = 12;
 	private int rateBedtimeToMidnight;
 	private int rateMidnightToEndLimit;
-	private int startTimeLimit = 17; //military time
-	private int endTimeLimit = 28; //military time of 12a + each hour after up to 4am
+	private int startTimeLimit = 17; // military time
+	private int bedTime = 20; // 8pm
+	private int midNight = 24;
+	private int endTimeLimit = 28; // military time of 12a + each hour after up
+									// to 4am
 	private int startTime = 18;
-	private int endTime = 20;
-	
-	
+	private int endTime = 27;
+
 	public int getStartTimeLimit() {
 		return startTimeLimit;
 	}
@@ -24,7 +26,6 @@ public class NightlyRate {
 	}
 
 	public int getEndTime() {
-		// TODO Auto-generated method stub
 		return endTime;
 	}
 
@@ -32,19 +33,12 @@ public class NightlyRate {
 		return rateStartLimitToBedtime;
 	}
 
-	public int getHoursWorked() {
-		return endTime - startTime;
+	public int getBabySitterHours() {
+		int rate12Hours = 0;
+		int rate16Hours = 0;
+		int rate8Hours = 0;
+
+		return rate12Hours + rate8Hours + rate16Hours;
 	}
 
-	public int getBabySitterMoney() {
-		return 0;
-	}
-
-	
-	
-	
-	
-
-	
-	
 }
